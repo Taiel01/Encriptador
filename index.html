@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.10/dist/vue.js"></script>
+    <script src="https://unpkg.com/vuex@4.0.2/dist/vuex.global.js"></script>
+    <script src="component.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="app" class="container mt-5">
+        <h1 class="" :class="[`p-3`, `text-grey`, fondo]" v-if="texto == ``">{{titulo}}</h1>
+        <h1 class="" :class="[`p-3`, `text-grey`, fondo]" v-else>{{desencriptado}}</h1>
+        <input type="text" class="form-control my-3" v-model="texto">
+        <h1 class="" :class="[`p-3`, `text-grey`, fondo2]" v-if="texto == ``">{{titulo2}}</h1>
+        <h1 class="" :class="[`p-3`, `text-grey`, fondo2]" v-else>{{encriptado}}</h1>
+    </div>
+    
+    
+
+    
+    <script src="app.js"></script>
+    
+</body>
+</html>
